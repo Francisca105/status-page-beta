@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Status Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Status Page</a></h1>
+
+
+
+					<!-- Banner -->
+						<section id="banner">
+							<header>
+								<h2>A página à tua medida.</h2>
+								<p>Mudar depois.</p>
+							</header>
+						</section>
+
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+								<section>
+									<br>
+									<hr>
+									<ul class="dates">
+										<% status.forEach((item) => { %>
+											<% if (item.status) { %>
+												<li>
+													<span class="date"> <i class="fas fa-signal"></i> <strong>On</strong></span>
+													<h3 style="color: black;"><%= item.nome %></h3>
+													<p>Está atualmente online.</p>
+												</li>
+											<% } else { %>
+												<li>
+													<span class="date"> <i class="fas fa-power-off"></i> <strong>Off</strong></span>
+													<h3 style="color: black;"><%= item.nome %></h3>
+													<p>Está atualmente offline.</p>
+												</li>
+											<% } %>
+										<% }) %>
+										
+										
+									</ul>
+									<hr>
+								</section>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+
+	</div>
+							
+								<!-- Copyright -->
+								<footer>
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Site desenvolvido pela <a href="https://github.com/Francisca105/">Francisca.105</a></li></li>
+										</ul>
+									</div>
+								</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
